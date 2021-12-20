@@ -25,8 +25,7 @@ module.exports = (app) => {
       credentials: true,
       origin:
         process.env.ORIGIN ||
-        "http://localhost:3000" ||
-        "https://game-guess-the-number.herokuapp.com/",
+        "https://game-guess-the-number.herokuapp.com",
     })
   );
 
