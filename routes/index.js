@@ -15,7 +15,7 @@ router.get("/users", (req, res, next) => {
 router.post("/scores", (req, res, next) => {
   const { userName, score } = req.body;
 
-  console.log(`la puntuacion`, score);
+  //console.log(`la puntuacion`, score);
 
   User.findOneAndUpdate({ username: userName }, { score: Number(score) }).then((response) => {
     console.log(`soy la response*****`, response);
