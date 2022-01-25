@@ -23,9 +23,7 @@ module.exports = (app) => {
   app.use(
     cors({
       credentials: true,
-      origin:
-        process.env.ORIGIN ||
-        "https://game-guess-the-number.herokuapp.com",
+      origin: process.env.ORIGIN || "https://guessthecorrectnumber.netlify.app",
     })
   );
 
